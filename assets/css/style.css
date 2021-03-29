@@ -1,0 +1,354 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Righteous&display=swap");
+
+/* font-family: 'Josefin Sans', sans-serif;
+font-family: 'Righteous', cursive; */
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+/* Landing Image Section */
+.landing-image-grid {
+  display: flex;
+  justify-content: space-between;
+  max-height: 495px;
+  background: linear-gradient(
+    108.37deg,
+    rgba(226, 11, 140, 0.6) 19.34%,
+    rgba(92, 3, 188, 0.6) 91.22%
+  );
+  color: white;
+}
+
+.landing-image-grid .left-grid {
+  margin: 120px 70px;
+}
+
+.left-grid h1 {
+  font-family: "Righteous", cursive;
+  font-size: 100px;
+}
+
+.left-grid p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  padding-bottom: 40px;
+}
+
+.left-grid a {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  background: #e20b8c;
+  padding: 15px 50px;
+  border-radius: 25px;
+}
+
+.landing-image-grid .right-grid img {
+  max-width: 450px;
+}
+
+/* Benefit Section Styling */
+#benefit-section h1 {
+  padding-top: 50px;
+  font-size: 35px;
+  font-family: "Righteous", cursive;
+}
+
+#benefit-section .benefit-section-grid {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-gap: 30px;
+  margin-top: 50px;
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  color: black;
+}
+
+.benefit-section-grid .box {
+  margin-top: 20px;
+}
+
+.box h2 {
+  font-weight: bold;
+  padding-top: 5px;
+}
+
+#benefit-section img {
+  max-width: 100%;
+}
+
+/* No-Credit Section */
+.no-credit-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px auto;
+  max-width: 60%;
+  text-align: center;
+}
+
+.no-credit-section .text {
+  font-family: "Righteous", cursive;
+}
+
+.button {
+  margin-top: 30px;
+}
+
+.no-credit-section .button a {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  background: #e20b8c;
+  padding: 15px 50px;
+  border-radius: 25px;
+}
+
+/* Stats Section */
+#stats-section {
+  background: linear-gradient(
+    108.37deg,
+    rgba(226, 11, 140, 0.6) 19.34%,
+    rgba(92, 3, 188, 0.6) 91.22%
+  );
+  color: white;
+  font-family: "Righteous", cursive;
+  text-align: center;
+  padding: 50px;
+}
+
+#stats-section h1 {
+  font-size: 30px;
+}
+
+.stats-flex {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.stats-flex h2 {
+  font-size: 50px;
+}
+
+/* Side Benefit Section */
+.side-benefit-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px auto;
+  max-width: 55%;
+  font-family: "Righteous", cursive;
+  color: white;
+  text-align: center;
+}
+
+.side-benefit-section .text {
+  background: linear-gradient(
+    180deg,
+    rgba(226, 11, 140, 0.6) 0%,
+    rgba(92, 3, 188, 0.6) 100%
+  );
+  padding: 35px 45px;
+  border-radius: 15px;
+}
+
+.side-benefit-section .percent {
+  background: linear-gradient(
+    180deg,
+    rgba(226, 11, 140, 0.6) 0%,
+    rgba(92, 3, 188, 0.6) 100%
+  );
+  padding: 35px 45px;
+  border-radius: 15px;
+}
+
+/* Next Step Section */
+.next-step-section {
+  margin: 200px auto;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.next-step-section .image img {
+  max-width: 450px;
+}
+
+.next-step-section .text {
+  margin-top: 40px;
+}
+
+.next-step-section .text h1 {
+  font-family: "Righteous", cursive;
+}
+
+.next-step-section .text p {
+  font-family: "Josefin Sans", sans-serif;
+  padding-bottom: 15px;
+}
+
+.next-step-section .text a {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  background: #e20b8c;
+  padding: 15px 50px;
+  border-radius: 25px;
+}
+
+/* FOOTER SECTION */
+#footer-section {
+  background: black;
+  color: white;
+  padding: 20px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+}
+
+.footer-grid .p-name {
+  font-family: "Righteous", cursive;
+  margin-top: 25px;
+}
+
+.footer-grid .other-links {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.other-links li {
+  list-style-type: none;
+  padding-bottom: 15px;
+}
+
+.other-links a {
+  text-decoration: none;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.social-media-links {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.social-media-links p {
+  padding-bottom: 15px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.social-media-links a {
+  background: white;
+  color: black;
+  padding: 10px;
+  border-radius: 50%;
+  margin-right: 5px;
+  text-align: center;
+}
+
+.social-media-links a:hover {
+  color: white;
+  background: black;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .landing-image-grid .right-grid img {
+    display: none;
+  }
+
+  .no-credit-section {
+    max-width: 80%;
+  }
+
+  .stats-flex {
+    justify-content: space-between;
+  }
+
+  .side-benefit-section {
+    margin: 60px auto;
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 425px) {
+  .landing-image-grid .left-grid {
+    margin: 120px 50px;
+  }
+
+  .left-grid h1 {
+    font-size: 80px;
+  }
+
+  #benefit-section .benefit-section-grid {
+    grid-template-columns: 2fr;
+  }
+
+  .no-credit-section {
+    flex-direction: column;
+  }
+
+  .stats-flex {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .side-benefit-section {
+    flex-direction: column;
+  }
+
+  .next-step-section {
+    flex-direction: column;
+  }
+
+  .next-step-section .image img {
+    max-width: 250px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 2fr;
+  }
+}
+
+@media (max-width: 375px) {
+  .landing-image-grid .left-grid {
+    margin: 120px 30px;
+  }
+
+  #benefit-section h1 {
+    padding-top: 50px;
+    font-size: 27px;
+  }
+}
+
+@media (max-width: 320px) {
+  .landing-image-grid .left-grid {
+    margin: 120px 15px;
+  }
+
+  .left-grid h1 {
+    font-size: 60px;
+  }
+
+  #stats-section h1 {
+    font-size: 20px;
+  }
+
+  .stats-flex {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+  }
+
+  .stats-flex h2 {
+    font-size: 35px;
+  }
+}
