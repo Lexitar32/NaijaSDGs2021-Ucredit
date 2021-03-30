@@ -80,8 +80,8 @@ body {
   padding-top: 5px;
 }
 
-#benefit-section img {
-  max-width: 100%;
+.vector-image img {
+  min-width: 100%;
 }
 
 /* No-Credit Section */
@@ -261,7 +261,7 @@ body {
   background: black;
 }
 
-/* Responsiveness */
+/* Responsiveness of all sections */
 @media (max-width: 768px) {
   .landing-image-grid .right-grid img {
     display: none;
