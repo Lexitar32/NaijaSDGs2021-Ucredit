@@ -24,7 +24,7 @@ body {
 }
 
 .landing-image-grid .left-grid {
-  margin: 120px 70px;
+  margin: 120px 170px;
 }
 
 .left-grid h1 {
@@ -49,6 +49,8 @@ body {
 }
 
 .landing-image-grid .right-grid img {
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
   max-width: 450px;
 }
 
