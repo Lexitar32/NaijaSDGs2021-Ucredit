@@ -32,7 +32,7 @@ const submitForm = () => {
     tin: tin,
     nin: nin,
     loan_amount: loan_amount,
-    monthly_income: employment_status,
+    monthly_income: monthly_income,
     expense: expense,
     loan_purpose: loan_purpose,
     medical_link: medical_link,
@@ -40,6 +40,25 @@ const submitForm = () => {
     gender: gender,
     employment_status: employment_status,
   };
+
+  //   var message = {
+  //     name: "Arimoro Olamilekan",
+  //     email: "arimoroolamilekan1@gmail.com",
+  //     family_size: 14,
+  //     address: "adreess streer",
+  //     dob: 05 - 05 - 2001,
+  //     bvn: 145986663,
+  //     tin: 1546633,
+  //     nin: 2558866322,
+  //     loan_amount: 15000,
+  //     monthly_income: 40000,
+  //     expense: 40000,
+  //     loan_purpose: "I am great",
+  //     medical_link: "https://arimoroportfolio.netlify.app",
+  //     financial_link: "https://arimoroportfolio.netlify.app",
+  //     gender: "Male",
+  //     employment_status: "Student",
+  //   };
 
   console.log(message);
   if (
@@ -79,15 +98,29 @@ const submitForm = () => {
     financial_link &&
     medical_link
   ) {
-    fetch("http://ucredit.maxlitemedia.com/api/creditrating/user/create", {
-      method: "POST",
-      body: message,
-      headers: {
-        "Content-Type": "application/json",
-      },
-    }).then(function (message) {
-      console.log(message);
-      swal("Good job!", "Thanks for submitting you details", "success");
-    });
+    axios({
+      method: "post",
+      url: "http://ucredit.maxlitemedia.com/api/creditrating/user/create",
+      data: JSON.stringify(message),
+      headers: { "Content-Type": "application/json" },
+    })
+      .then(function (response) {
+        //handle success
+        console.log(response);
+      })
+      .catch(function (response) {
+        //handle error
+        console.log(response);
+      });
   }
 };
+
+// fetch("http://ucredit.maxlitemedia.com/api/creditrating/user/create", {
+//   method: "POST",
+//   headers: {
+//     "Content-Type": "application/json",
+//   },
+//   body: JSON.stringify(message),
+// }).then((message) => {
+//   console.log(message);
+//   swal("Good job!", "Thanks for submitting you details", "success");
