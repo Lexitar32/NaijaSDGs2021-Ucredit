@@ -1,10 +1,10 @@
-const getInputData = document.getElementById("submitForm"); // Get Form
+const getInputData = document.getElementById("postForm"); // Get Form
 
 getInputData.addEventListener("submit", (e) => {
   e.preventDefault();
 });
 
-const submitForm = () => {
+const postForm = () => {
   const bvn = document.getElementById("bvn").value;
   const nin = document.getElementById("nin").value;
   const tin = document.getElementById("tin").value;
@@ -22,45 +22,6 @@ const submitForm = () => {
   const financial_link = document.getElementById("financial_link").value;
   const medical_link = document.getElementById("medical_link").value;
 
-  var message = {
-    name: name,
-    email: email,
-    family_size: family_size,
-    address: address,
-    dob: dob,
-    bvn: bvn,
-    tin: tin,
-    nin: nin,
-    loan_amount: loan_amount,
-    monthly_income: monthly_income,
-    expense: expense,
-    loan_purpose: loan_purpose,
-    medical_link: medical_link,
-    financial_link: financial_link,
-    gender: gender,
-    employment_status: employment_status,
-  };
-
-  //   var message = {
-  //     name: "Arimoro Olamilekan",
-  //     email: "arimoroolamilekan1@gmail.com",
-  //     family_size: 14,
-  //     address: "adreess streer",
-  //     dob: 05 - 05 - 2001,
-  //     bvn: 145986663,
-  //     tin: 1546633,
-  //     nin: 2558866322,
-  //     loan_amount: 15000,
-  //     monthly_income: 40000,
-  //     expense: 40000,
-  //     loan_purpose: "I am great",
-  //     medical_link: "https://arimoroportfolio.netlify.app",
-  //     financial_link: "https://arimoroportfolio.netlify.app",
-  //     gender: "Male",
-  //     employment_status: "Student",
-  //   };
-
-  console.log(message);
   if (
     bvn == "" &&
     nin == "" &&
@@ -98,29 +59,34 @@ const submitForm = () => {
     financial_link &&
     medical_link
   ) {
-    axios({
-      method: "post",
-      url: "http://ucredit.maxlitemedia.com/api/creditrating/user/create",
-      data: JSON.stringify(message),
-      headers: { "Content-Type": "application/json" },
-    })
-      .then(function (response) {
-        //handle success
-        console.log(response);
+    axios
+      .post("http://ucredit.maxlitemedia.com/api/creditrating/user/create", {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        family_size: document.getElementById("family_size").value,
+        address: document.getElementById("address").value,
+        dob: document.getElementById("dob").value,
+        bvn: document.getElementById("bvn").value,
+        tin: document.getElementById("tin").value,
+        financial_link: document.getElementById("financial_link").value,
+        medical_link: document.getElementById("medical_link").value,
+        loan_amount: document.getElementById("loan_amount").value,
+        loan_purpose: document.getElementById("loan_purpose").value,
+        monthly_income: document.getElementById("monthly_income").value,
+        expense: document.getElementById("expense").value,
+        gender: document.getElementById("gender").value,
+        employment_status: document.getElementById("employment_status").value,
+        nin: document.getElementById("nin").value,
       })
-      .catch(function (response) {
-        //handle error
-        console.log(response);
+      .then(function (response) {
+        swal("Good job!", "Thanks for submitting you details", "success");
+        getInputData.reset();
+        console.log(response.data);
+      })
+      .catch(function (error) {
+        console.log(error.response.data);
       });
   }
 };
 
-// fetch("http://ucredit.maxlitemedia.com/api/creditrating/user/create", {
-//   method: "POST",
-//   headers: {
-//     "Content-Type": "application/json",
-//   },
-//   body: JSON.stringify(message),
-// }).then((message) => {
-//   console.log(message);
-//   swal("Good job!", "Thanks for submitting you details", "success");
+//token: "YYm0I8"

@@ -60,7 +60,7 @@
 
     <!-- Personal Info Form -->
     <div class="container personal-info-form">
-      <form id="submitForm" onsubmit="submitForm()">
+      <form onsubmit="postForm()" id="postForm">
         <div class="form-group">
           <p><label>Bank Verification Number (BVN):</label></p>
           <input name="bvn" type="text" id="bvn" />
@@ -170,17 +170,14 @@
       </div>
     </footer>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
-      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
-      crossorigin="anonymous"
-    ></script>
+    <!-- Custom JavaScript -->
+    <script src="../assets/js/individual.js"></script>
+
+    <!-- Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     <!-- Sweet Alert -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
-    <!-- Custom JavaScript -->
-    <script src="../assets/js/individual.js"></script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
