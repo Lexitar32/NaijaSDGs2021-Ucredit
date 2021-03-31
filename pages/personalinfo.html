@@ -40,6 +40,106 @@
       </div>
     </nav>
 
+    <!-- Top Section -->
+    <div class="top-section-image">
+      <img src="../assets/images/Group 18.svg" alt="Top Image" />
+      <h1 class="credit-rating">Credit Rating</h1>
+    </div>
+
+    <!-- Options Section -->
+    <div class="options-section container">
+      <div class="radio-option">
+        <input type="radio" />
+        <label> Individual </label>
+      </div>
+      <div class="radio-option">
+        <input type="radio" />
+        <label> Business </label>
+      </div>
+    </div>
+
+    <!-- Personal Info Form -->
+    <div class="container personal-info-form">
+      <form id="submitForm" onsubmit="submitForm()">
+        <div class="form-group">
+          <p><label>Bank Verification Number (BVN):</label></p>
+          <input name="bvn" type="text" id="bvn" />
+        </div>
+        <div class="form-group">
+          <label>National Identification Number (NIN):</label>
+          <input name="nin" type="text" id="nin" />
+        </div>
+        <div class="form-group">
+          <label>Tax Identification Number (TIN):</label>
+          <input name="tin" type="text" id="tin" />
+        </div>
+        <div class="form-group">
+          <label>Full Name:</label>
+          <input name="name" type="text" id="name" />
+        </div>
+        <div class="form-group">
+          <label>Email:</label>
+          <input name="email" type="email" id="email" />
+        </div>
+        <div class="form-group">
+          <label>Gender:</label>
+          <input name="gender" type="text" id="gender" />
+        </div>
+        <div class="form-group">
+          <label>D.O.B</label>
+          <input name="dob" type="date" id="dob" />
+        </div>
+        <div class="form-group">
+          <label>Home Address:</label>
+          <input name="address" type="text" id="address" />
+        </div>
+        <div class="form-group">
+          <label>Employment Status:</label>
+          <input name="employment_status" type="text" id="employment_status" />
+        </div>
+        <div class="form-group">
+          <label>Monthly Income:</label>
+          <input name="monthly_income" type="text" id="monthly_income" />
+        </div>
+        <div class="form-group">
+          <label>Estimated Monthly Expenses:</label>
+          <input name="expense" type="text" id="expense" />
+        </div>
+        <div class="form-group">
+          <label>Loan Purpose:</label>
+          <input name="loan_purpose" type="text" id="loan_purpose" />
+        </div>
+        <div class="form-group">
+          <label>Loan Amount:</label>
+          <input name="loan_amount" type="text" id="loan_amount" />
+        </div>
+        <!-- <div class="form-group">
+          <label>Residence (Rented, Owned, Family House):</label>
+          <input type="text" id="residence" />
+        </div>
+        <div class="form-group">
+          <label>Relationship Status:</label>
+          <input type="text" id="relationship_status" />
+        </div> -->
+        <div class="form-group">
+          <label>If married, what is the family size:</label>
+          <input name="family_size" type="text" id="family_size" />
+        </div>
+        <div class="form-group">
+          <label>Attach Link to Financial Statement (1-year):</label>
+          <input name="financial_link" type="text" id="financial_link" />
+        </div>
+        <div class="form-group">
+          <label>Link to Medical History File:</label>
+          <input name="medical_link" type="text" id="medical_link" />
+        </div>
+        <div class="form-submit">
+          <input type="submit" value="Submit Application" class="button" />
+        </div>
+        <div style="clear: both"></div>
+      </form>
+    </div>
+
     <!-- Footer -->
     <footer id="footer-section">
       <div class="container footer-grid">
@@ -69,6 +169,12 @@
         </div>
       </div>
     </footer>
+
+    <!-- Sweet Alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="../assets/js/individual.js"></script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

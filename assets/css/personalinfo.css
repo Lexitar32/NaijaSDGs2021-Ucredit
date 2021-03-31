@@ -23,6 +23,99 @@ body {
   font-weight: 400;
 }
 
+/* Top Image Section Styling */
+.top-section-image img {
+  position: relative;
+  max-width: 100%;
+}
+
+.top-section-image h1 {
+  position: absolute;
+  top: 200px;
+  left: 150px;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+/* Options Section Styling */
+.options-section {
+  display: flex;
+}
+
+.options-section .radio-option {
+  padding: 10px 40px;
+}
+
+.radio-option input {
+  font-size: 15px;
+  border: 1px solid #e20b8c !important;
+}
+
+.radio-option label {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+}
+
+/* Personal Info Form */
+.personal-info-form {
+  margin: 15px auto;
+  max-width: 75%;
+}
+
+.personal-info-form form label {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+}
+
+.personal-info-form form input[type="text"] {
+  border: 2px solid #bcb4b9;
+  width: 100%;
+  padding: 6px;
+  border-radius: 7px;
+}
+
+.personal-info-form form input[type="email"] {
+  border: 2px solid #bcb4b9;
+  width: 100%;
+  padding: 6px;
+  border-radius: 7px;
+}
+
+.personal-info-form form input[type="date"] {
+  border: 2px solid #bcb4b9;
+  width: 100%;
+  padding: 6px;
+  border-radius: 7px;
+}
+
+/* .personal-info-form form .file {
+  padding: 25px;
+  border-radius: 3px;
+  background: rgba(196, 196, 196, 0.42);
+  border: none;
+} */
+
+.personal-info-form form input:focus {
+  border: 2px solid rgba(226, 11, 140, 0.6) 19.34%;
+}
+
+.personal-info-form form .button {
+  background: #e20b8c;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 124px;
+  border: none;
+  float: right;
+}
+
+.personal-info-form form .button:focus {
+  outline: none;
+}
+
 /* FOOTER SECTION */
 #footer-section {
   background: black;
